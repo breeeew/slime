@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="slimeGame" size="804,626" id="ru.slimeGame" metadata="uml2-1.0" initialized="true" tag="10" key="32303037303533312D31302054686520536C696D65">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.2" name="ClientActivity" location="643,444" size="125,67" id="ru.slimeGame/ClientActivity" runTimeClassModel="onCreate(Landroid.os.Bundle;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="74,18">
+      <children xsi:type="editmodel:MethodEditModel" name="onCreate" id="ru.slimeGame/ClientActivity#onCreate(Landroid.os.Bundle;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.5/@sourceConnections.2" name="MultyPlayActivity" location="450,225" size="150,157" id="ru.slimeGame/MultyPlayActivity" runTimeClassModel="onTouch(Landroid.view.View;Landroid.view.MotionEvent;),bUTTON_SERVER,matchParent,bUTTON_CLIENT,onCreate(Landroid.os.Bundle;),wrapContent">
+    <children xsi:type="editmodel:CompartmentEditModel" size="123,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="bUTTON_CLIENT" id="ru.slimeGame/MultyPlayActivity#bUTTON_CLIENT"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bUTTON_SERVER" id="ru.slimeGame/MultyPlayActivity#bUTTON_SERVER"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="matchParent" id="ru.slimeGame/MultyPlayActivity#matchParent"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="wrapContent" id="ru.slimeGame/MultyPlayActivity#wrapContent"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="74,36">
+      <children xsi:type="editmodel:MethodEditModel" name="onCreate" id="ru.slimeGame/MultyPlayActivity#onCreate(Landroid.os.Bundle;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="onTouch" id="ru.slimeGame/MultyPlayActivity#onTouch(Landroid.view.View;Landroid.view.MotionEvent;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ru.slimeGame/MultyPlayActivity-Standard::Call->ru.slimeGame/myButton*ru.slimeGame/MultyPlayActivity-Standard::Instantiate->ru.slimeGame/myButton*ru.slimeGame/MultyPlayActivity-Soyatec::Import->ru.slimeGame/myButton" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,157" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="120,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ru.slimeGame/ServerActivity@serverActivity+ru.slimeGame/MultyPlayActivity@multyPlayActivity" source="//@children.1" target="//@children.3" targetEnd="//@children.1/@sourceConnections.1/@children.1" label="//@children.1/@sourceConnections.1/@children.2" sourceEnd="//@children.1/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="multyPlayActivity" location="150,10" id="ru.slimeGame/ServerActivity@serverActivity+ru.slimeGame/MultyPlayActivity@multyPlayActivity|ru.slimeGame/MultyPlayActivity#multyPlayActivity" attachSource="true" multiplicityLabel="//@children.1/@sourceConnections.1/@children.0/@children.1" roleLabel="//@children.1/@sourceConnections.1/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - multyPlayActivity" location="607,242" size="91,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="607,214" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="serverActivity" location="10,67" id="ru.slimeGame/ServerActivity@serverActivity+ru.slimeGame/MultyPlayActivity@multyPlayActivity|ru.slimeGame/ServerActivity#serverActivity" multiplicityLabel="//@children.1/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.1/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - serverActivity" location="660,164" size="78,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="628,164" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ru.slimeGame/ClientActivity@clientActivity+ru.slimeGame/MultyPlayActivity@multyPlayActivity" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.2/@children.1" label="//@children.1/@sourceConnections.2/@children.2" sourceEnd="//@children.1/@sourceConnections.2/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="multyPlayActivity" location="150,147" id="ru.slimeGame/ClientActivity@clientActivity+ru.slimeGame/MultyPlayActivity@multyPlayActivity|ru.slimeGame/MultyPlayActivity#multyPlayActivity" attachSource="true" multiplicityLabel="//@children.1/@sourceConnections.2/@children.0/@children.1" roleLabel="//@children.1/@sourceConnections.2/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - multyPlayActivity" location="607,351" size="91,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="607,379" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="clientActivity" location="10,0" id="ru.slimeGame/ClientActivity@clientActivity+ru.slimeGame/MultyPlayActivity@multyPlayActivity|ru.slimeGame/ClientActivity#clientActivity" multiplicityLabel="//@children.1/@sourceConnections.2/@children.1/@children.1" roleLabel="//@children.1/@sourceConnections.2/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - clientActivity" location="660,423" size="71,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="628,423" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0 //@children.5/@sourceConnections.0" name="myButton" location="330,435" size="121,85" id="ru.slimeGame/myButton" runTimeClassModel="onTouchEvent(Landroid.view.MotionEvent;),myButton(Landroid.content.Context;II)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="98,36">
+      <children xsi:type="editmodel:MethodEditModel" name="myButton" id="ru.slimeGame/myButton#myButton(Landroid.content.Context;II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="onTouchEvent" id="ru.slimeGame/myButton#onTouchEvent(Landroid.view.MotionEvent;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.1" name="ServerActivity" location="643,90" size="130,67" id="ru.slimeGame/ServerActivity" runTimeClassModel="onCreate(Landroid.os.Bundle;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="74,18">
+      <children xsi:type="editmodel:MethodEditModel" name="onCreate" id="ru.slimeGame/ServerActivity#onCreate(Landroid.os.Bundle;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.5/@sourceConnections.1" name="SinglePlayActivity" location="420,0" size="157,157" id="ru.slimeGame/SinglePlayActivity" runTimeClassModel="onTouch(Landroid.view.View;Landroid.view.MotionEvent;),bUTTON_CONTINUE,matchParent,onCreate(Landroid.os.Bundle;),wrapContent,bUTTON_ARCADE">
+    <children xsi:type="editmodel:CompartmentEditModel" size="132,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="bUTTON_ARCADE" id="ru.slimeGame/SinglePlayActivity#bUTTON_ARCADE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bUTTON_CONTINUE" id="ru.slimeGame/SinglePlayActivity#bUTTON_CONTINUE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="matchParent" id="ru.slimeGame/SinglePlayActivity#matchParent"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="wrapContent" id="ru.slimeGame/SinglePlayActivity#wrapContent"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="74,36">
+      <children xsi:type="editmodel:MethodEditModel" name="onCreate" id="ru.slimeGame/SinglePlayActivity#onCreate(Landroid.os.Bundle;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="onTouch" id="ru.slimeGame/SinglePlayActivity#onTouch(Landroid.view.View;Landroid.view.MotionEvent;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="TheSlimeActivity" location="30,75" size="173,265" id="ru.slimeGame/TheSlimeActivity" runTimeClassModel="onCreateOptionsMenu(Landroid.view.Menu;),onTouch(Landroid.view.View;Landroid.view.MotionEvent;),onPrepareOptionsMenu(Landroid.view.Menu;),matchParent,onOptionsItemSelected(Landroid.view.MenuItem;),onCreate(Landroid.os.Bundle;),wrapContent,mENU_SELECT_EXIT,mENU_SELECT_MULTY,bUTTON_SINGLE,mENU_SELECT_SINGLE,bUTTON_MULTY">
+    <children xsi:type="editmodel:CompartmentEditModel" size="150,126">
+      <children xsi:type="editmodel:AttributeEditModel" name="bUTTON_MULTY" id="ru.slimeGame/TheSlimeActivity#bUTTON_MULTY"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bUTTON_SINGLE" id="ru.slimeGame/TheSlimeActivity#bUTTON_SINGLE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mENU_SELECT_EXIT" id="ru.slimeGame/TheSlimeActivity#mENU_SELECT_EXIT"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mENU_SELECT_MULTY" id="ru.slimeGame/TheSlimeActivity#mENU_SELECT_MULTY"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mENU_SELECT_SINGLE" id="ru.slimeGame/TheSlimeActivity#mENU_SELECT_SINGLE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="matchParent" id="ru.slimeGame/TheSlimeActivity#matchParent"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="wrapContent" id="ru.slimeGame/TheSlimeActivity#wrapContent"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="143,90">
+      <children xsi:type="editmodel:MethodEditModel" name="onCreate" id="ru.slimeGame/TheSlimeActivity#onCreate(Landroid.os.Bundle;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="onCreateOptionsMenu" id="ru.slimeGame/TheSlimeActivity#onCreateOptionsMenu(Landroid.view.Menu;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="onOptionsItemSelected" id="ru.slimeGame/TheSlimeActivity#onOptionsItemSelected(Landroid.view.MenuItem;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="onPrepareOptionsMenu" id="ru.slimeGame/TheSlimeActivity#onPrepareOptionsMenu(Landroid.view.Menu;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="onTouch" id="ru.slimeGame/TheSlimeActivity#onTouch(Landroid.view.View;Landroid.view.MotionEvent;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ru.slimeGame/TheSlimeActivity-Standard::Call->ru.slimeGame/myButton*ru.slimeGame/TheSlimeActivity-Standard::Instantiate->ru.slimeGame/myButton*ru.slimeGame/TheSlimeActivity-Soyatec::Import->ru.slimeGame/myButton" source="//@children.5" target="//@children.2" targetEnd="//@children.5/@sourceConnections.0/@children.2" label="//@children.5/@sourceConnections.0/@children.0" sourceEnd="//@children.5/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="173,218" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="17,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ru.slimeGame/SinglePlayActivity@singlePlayActivity+ru.slimeGame/TheSlimeActivity@theSlimeActivity" source="//@children.5" target="//@children.4" targetEnd="//@children.5/@sourceConnections.1/@children.1" label="//@children.5/@sourceConnections.1/@children.2" sourceEnd="//@children.5/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="theSlimeActivity" location="173,41" id="ru.slimeGame/SinglePlayActivity@singlePlayActivity+ru.slimeGame/TheSlimeActivity@theSlimeActivity|ru.slimeGame/TheSlimeActivity#theSlimeActivity" attachSource="true" multiplicityLabel="//@children.5/@sourceConnections.1/@children.0/@children.1" roleLabel="//@children.5/@sourceConnections.1/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - theSlimeActivity" location="210,95" size="86,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="210,123" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="singlePlayActivity" location="0,116" id="ru.slimeGame/SinglePlayActivity@singlePlayActivity+ru.slimeGame/TheSlimeActivity@theSlimeActivity|ru.slimeGame/SinglePlayActivity#singlePlayActivity" multiplicityLabel="//@children.5/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.5/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - singlePlayActivity" location="319,95" size="94,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="395,123" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ru.slimeGame/MultyPlayActivity@multyPlayActivity+ru.slimeGame/TheSlimeActivity@theSlimeActivity" source="//@children.5" target="//@children.1" targetEnd="//@children.5/@sourceConnections.2/@children.1" label="//@children.5/@sourceConnections.2/@children.2" sourceEnd="//@children.5/@sourceConnections.2/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="theSlimeActivity" location="173,207" id="ru.slimeGame/MultyPlayActivity@multyPlayActivity+ru.slimeGame/TheSlimeActivity@theSlimeActivity|ru.slimeGame/TheSlimeActivity#theSlimeActivity" attachSource="true" multiplicityLabel="//@children.5/@sourceConnections.2/@children.0/@children.1" roleLabel="//@children.5/@sourceConnections.2/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - theSlimeActivity" location="210,261" size="86,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="210,289" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="multyPlayActivity" location="0,57" id="ru.slimeGame/MultyPlayActivity@multyPlayActivity+ru.slimeGame/TheSlimeActivity@theSlimeActivity|ru.slimeGame/MultyPlayActivity#multyPlayActivity" multiplicityLabel="//@children.5/@sourceConnections.2/@children.1/@children.1" roleLabel="//@children.5/@sourceConnections.2/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - multyPlayActivity" location="352,261" size="91,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="425,289" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Play" location="150,444" size="97,67" id="ru.slimeGame/Play" runTimeClassModel="onCreate(Landroid.os.Bundle;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="74,18">
+      <children xsi:type="editmodel:MethodEditModel" name="onCreate" id="ru.slimeGame/Play#onCreate(Landroid.os.Bundle;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=1;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

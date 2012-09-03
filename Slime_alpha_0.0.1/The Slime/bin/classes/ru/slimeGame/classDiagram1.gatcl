@@ -1,0 +1,288 @@
+<object-stream>
+  <diagram nodeName="ClassDiagramRoot" width="-1" height="-1" x="0" y="0" connectionRouter="0" rulersEnabled="true" snapToGeometry="true" snapToGrid="true" gridEnabled="true" zoom="1.0" javaProjectName="TheSlimeActivity">
+    <children>
+      <package nodeName="ru.slimeGame" width="-1" height="-1" x="169" y="10" linked="true" referenced="false">
+        <children>
+          <entity nodeName="ru.slimeGame.TheSlimeActivity" width="-1" height="-1" x="285" y="0" visibility="1" abstract="false" inner="false" final="false" static="false" type="1" linked="true" referenced="false">
+            <children>
+              <field nodeName="MENU_SELECT_SINGLE" type="int" name="MENU_SELECT_SINGLE" static="false" final="true" visibility="3"/>
+              <field nodeName="MENU_SELECT_MULTY" type="int" name="MENU_SELECT_MULTY" static="false" final="true" visibility="3"/>
+              <field nodeName="MENU_SELECT_EXIT" type="int" name="MENU_SELECT_EXIT" static="false" final="true" visibility="3"/>
+              <field nodeName="BUTTON_SINGLE" type="int" name="BUTTON_SINGLE" static="false" final="true" visibility="3"/>
+              <field nodeName="BUTTON_MULTY" type="int" name="BUTTON_MULTY" static="false" final="true" visibility="3"/>
+              <field nodeName="matchParent" type="int" name="matchParent" static="false" final="true" visibility="3"/>
+              <field nodeName="wrapContent" type="int" name="wrapContent" static="false" final="true" visibility="3"/>
+              <method nodeName="onCreate(Bundle)" type="void" name="onCreate" static="false" final="false" abstract="false" visibility="1">
+                <parameters>
+                  <methodParameter type="Bundle" name="savedInstanceState" final="false"/>
+                </parameters>
+              </method>
+              <method nodeName="onCreateOptionsMenu(Menu)" type="boolean" name="onCreateOptionsMenu" static="false" final="false" abstract="false" visibility="1">
+                <parameters>
+                  <methodParameter type="Menu" name="menu" final="false"/>
+                </parameters>
+              </method>
+              <method nodeName="onPrepareOptionsMenu(Menu)" type="boolean" name="onPrepareOptionsMenu" static="false" final="false" abstract="false" visibility="1">
+                <parameters>
+                  <methodParameter type="Menu" name="menu" final="false"/>
+                </parameters>
+              </method>
+              <method nodeName="onOptionsItemSelected(MenuItem)" type="boolean" name="onOptionsItemSelected" static="false" final="false" abstract="false" visibility="1">
+                <parameters>
+                  <methodParameter type="MenuItem" name="item" final="false"/>
+                </parameters>
+              </method>
+              <method nodeName="onTouch(View,MotionEvent)" type="boolean" name="onTouch" static="false" final="false" abstract="false" visibility="1">
+                <parameters>
+                  <methodParameter type="View" name="v" final="false"/>
+                  <methodParameter type="MotionEvent" name="event" final="false"/>
+                </parameters>
+              </method>
+            </children>
+            <extends>
+              <no-comparator/>
+              <string>android.app.Activity</string>
+            </extends>
+            <implements>
+              <no-comparator/>
+              <string>android.view.View$OnTouchListener</string>
+            </implements>
+            <depends>
+              <no-comparator/>
+              <string>android.app.Activity</string>
+              <string>android.content.Intent</string>
+              <string>android.os.Bundle</string>
+              <string>android.view.Menu</string>
+              <string>android.view.MenuItem</string>
+              <string>android.view.MotionEvent</string>
+              <string>android.view.View</string>
+              <string>android.view.View$OnTouchListener</string>
+              <string>android.view.Window</string>
+              <string>android.view.WindowManager</string>
+              <string>android.view.WindowManager$LayoutParams</string>
+              <string>android.widget.LinearLayout</string>
+              <string>android.widget.LinearLayout$LayoutParams</string>
+              <string>android.widget.RelativeLayout</string>
+              <string>android.widget.RelativeLayout$LayoutParams</string>
+              <string>java.lang.Override</string>
+              <string>ru.slimeGame.MultyPlayActivity</string>
+              <string>ru.slimeGame.R</string>
+              <string>ru.slimeGame.R$drawable</string>
+              <string>ru.slimeGame.SinglePlayActivity</string>
+              <string>ru.slimeGame.myButton</string>
+            </depends>
+          </entity>
+          <entity nodeName="ru.slimeGame.ServerActivity" width="-1" height="-1" x="655" y="262" visibility="1" abstract="false" inner="false" final="false" static="false" type="1" linked="true" referenced="false">
+            <children>
+              <method nodeName="onCreate(Bundle)" type="void" name="onCreate" static="false" final="false" abstract="false" visibility="1">
+                <parameters>
+                  <methodParameter type="Bundle" name="savedInstanceState" final="false"/>
+                </parameters>
+              </method>
+            </children>
+            <extends>
+              <no-comparator/>
+              <string>android.app.Activity</string>
+            </extends>
+            <depends>
+              <no-comparator/>
+              <string>android.app.Activity</string>
+              <string>android.os.Bundle</string>
+              <string>android.view.Window</string>
+              <string>android.view.WindowManager</string>
+              <string>android.view.WindowManager$LayoutParams</string>
+              <string>java.lang.Override</string>
+            </depends>
+          </entity>
+          <entity nodeName="ru.slimeGame.SinglePlayActivity" width="-1" height="-1" x="655" y="319" visibility="1" abstract="false" inner="false" final="false" static="false" type="1" linked="true" referenced="false">
+            <children>
+              <field nodeName="matchParent" type="int" name="matchParent" static="false" final="true" visibility="3"/>
+              <field nodeName="wrapContent" type="int" name="wrapContent" static="false" final="true" visibility="3"/>
+              <field nodeName="BUTTON_CONTINUE" type="int" name="BUTTON_CONTINUE" static="false" final="true" visibility="3"/>
+              <field nodeName="BUTTON_ARCADE" type="int" name="BUTTON_ARCADE" static="false" final="true" visibility="3"/>
+              <method nodeName="onCreate(Bundle)" type="void" name="onCreate" static="false" final="false" abstract="false" visibility="1">
+                <parameters>
+                  <methodParameter type="Bundle" name="savedInstanceState" final="false"/>
+                </parameters>
+              </method>
+              <method nodeName="onTouch(View,MotionEvent)" type="boolean" name="onTouch" static="false" final="false" abstract="false" visibility="1">
+                <parameters>
+                  <methodParameter type="View" name="v" final="false"/>
+                  <methodParameter type="MotionEvent" name="event" final="false"/>
+                </parameters>
+              </method>
+            </children>
+            <extends>
+              <no-comparator/>
+              <string>android.app.Activity</string>
+            </extends>
+            <implements>
+              <no-comparator/>
+              <string>android.view.View$OnTouchListener</string>
+            </implements>
+            <depends>
+              <no-comparator/>
+              <string>android.app.Activity</string>
+              <string>android.os.Bundle</string>
+              <string>android.view.MotionEvent</string>
+              <string>android.view.View</string>
+              <string>android.view.View$OnTouchListener</string>
+              <string>android.view.Window</string>
+              <string>android.view.WindowManager</string>
+              <string>android.view.WindowManager$LayoutParams</string>
+              <string>android.widget.Button</string>
+              <string>android.widget.LinearLayout</string>
+              <string>android.widget.LinearLayout$LayoutParams</string>
+              <string>android.widget.RelativeLayout</string>
+              <string>android.widget.RelativeLayout$LayoutParams</string>
+            </depends>
+          </entity>
+          <entity nodeName="ru.slimeGame.MultyPlayActivity" width="-1" height="-1" x="0" y="319" visibility="1" abstract="false" inner="false" final="false" static="false" type="1" linked="true" referenced="false">
+            <children>
+              <field nodeName="matchParent" type="int" name="matchParent" static="false" final="true" visibility="3"/>
+              <field nodeName="wrapContent" type="int" name="wrapContent" static="false" final="true" visibility="3"/>
+              <field nodeName="BUTTON_SERVER" type="int" name="BUTTON_SERVER" static="false" final="true" visibility="3"/>
+              <field nodeName="BUTTON_CLIENT" type="int" name="BUTTON_CLIENT" static="false" final="true" visibility="3"/>
+              <method nodeName="onCreate(Bundle)" type="void" name="onCreate" static="false" final="false" abstract="false" visibility="1">
+                <parameters>
+                  <methodParameter type="Bundle" name="savedInstanceState" final="false"/>
+                </parameters>
+              </method>
+              <method nodeName="onTouch(View,MotionEvent)" type="boolean" name="onTouch" static="false" final="false" abstract="false" visibility="1">
+                <parameters>
+                  <methodParameter type="View" name="v" final="false"/>
+                  <methodParameter type="MotionEvent" name="event" final="false"/>
+                </parameters>
+              </method>
+            </children>
+            <extends>
+              <no-comparator/>
+              <string>android.app.Activity</string>
+            </extends>
+            <implements>
+              <no-comparator/>
+              <string>android.view.View$OnTouchListener</string>
+            </implements>
+            <depends>
+              <no-comparator/>
+              <string>android.app.Activity</string>
+              <string>android.content.Intent</string>
+              <string>android.os.Bundle</string>
+              <string>android.view.MotionEvent</string>
+              <string>android.view.View</string>
+              <string>android.view.View$OnTouchListener</string>
+              <string>android.view.Window</string>
+              <string>android.view.WindowManager</string>
+              <string>android.view.WindowManager$LayoutParams</string>
+              <string>android.widget.LinearLayout</string>
+              <string>android.widget.LinearLayout$LayoutParams</string>
+              <string>android.widget.RelativeLayout</string>
+              <string>android.widget.RelativeLayout$LayoutParams</string>
+              <string>java.lang.Override</string>
+              <string>ru.slimeGame.R</string>
+              <string>ru.slimeGame.R$drawable</string>
+              <string>ru.slimeGame.ServerActivity</string>
+              <string>ru.slimeGame.myButton</string>
+            </depends>
+          </entity>
+          <entity nodeName="ru.slimeGame.ClientActivity" width="-1" height="-1" x="17" y="262" visibility="1" abstract="false" inner="false" final="false" static="false" type="1" linked="true" referenced="false">
+            <children>
+              <method nodeName="onCreate(Bundle)" type="void" name="onCreate" static="false" final="false" abstract="false" visibility="1">
+                <parameters>
+                  <methodParameter type="Bundle" name="savedInstanceState" final="false"/>
+                </parameters>
+              </method>
+            </children>
+            <extends>
+              <no-comparator/>
+              <string>android.app.Activity</string>
+            </extends>
+            <depends>
+              <no-comparator/>
+              <string>android.app.Activity</string>
+              <string>android.os.Bundle</string>
+              <string>java.lang.Override</string>
+            </depends>
+          </entity>
+          <entity nodeName="ru.slimeGame.myButton" width="-1" height="-1" x="285" y="463" visibility="1" abstract="false" inner="false" final="false" static="false" type="1" linked="true" referenced="false">
+            <children>
+              <field nodeName="bitmap" type="Bitmap" name="bitmap" static="false" final="false" visibility="4"/>
+              <field nodeName="nopresed" type="int" name="nopresed" static="false" final="false" visibility="4"/>
+              <field nodeName="presed" type="int" name="presed" static="false" final="false" visibility="4"/>
+              <field nodeName="ADOWN" type="int" name="ADOWN" static="false" final="true" visibility="4"/>
+              <field nodeName="AMOVE" type="int" name="AMOVE" static="false" final="true" visibility="4"/>
+              <field nodeName="AUP" type="int" name="AUP" static="false" final="true" visibility="4"/>
+              <method nodeName="myButton(Context,int,int)" type="void" name="myButton" static="false" final="false" abstract="false" visibility="1">
+                <parameters>
+                  <methodParameter type="Context" name="context" final="false"/>
+                  <methodParameter type="int" name="pic1" final="false"/>
+                  <methodParameter type="int" name="pic2" final="false"/>
+                </parameters>
+              </method>
+              <method nodeName="onTouchEvent(MotionEvent)" type="boolean" name="onTouchEvent" static="false" final="false" abstract="false" visibility="1">
+                <parameters>
+                  <methodParameter type="MotionEvent" name="event" final="false"/>
+                </parameters>
+              </method>
+              <method nodeName="onMeasure(int,int)" type="void" name="onMeasure" static="false" final="false" abstract="false" visibility="2">
+                <parameters>
+                  <methodParameter type="int" name="widthMeasureSpec" final="false"/>
+                  <methodParameter type="int" name="heightMeasureSpec" final="false"/>
+                </parameters>
+              </method>
+              <method nodeName="onDraw(Canvas)" type="void" name="onDraw" static="false" final="false" abstract="false" visibility="2">
+                <parameters>
+                  <methodParameter type="Canvas" name="canvas" final="false"/>
+                </parameters>
+              </method>
+            </children>
+            <extends>
+              <no-comparator/>
+              <string>android.view.View</string>
+            </extends>
+            <attribute>
+              <no-comparator/>
+              <string>android.graphics.Bitmap</string>
+            </attribute>
+            <depends>
+              <no-comparator/>
+              <string>android.content.Context</string>
+              <string>android.content.res.Resources</string>
+              <string>android.graphics.Bitmap</string>
+              <string>android.graphics.BitmapFactory</string>
+              <string>android.graphics.Canvas</string>
+              <string>android.view.MotionEvent</string>
+              <string>android.view.View</string>
+              <string>java.lang.Override</string>
+            </depends>
+          </entity>
+        </children>
+      </package>
+      <package nodeName="android.app" width="-1" height="-1" x="1141" y="762" linked="false" referenced="true">
+        <children>
+          <entity nodeName="android.app.Activity" width="-1" height="-1" x="10" y="10" visibility="1" abstract="false" inner="false" final="false" static="false" type="1" linked="false" referenced="true"/>
+        </children>
+      </package>
+      <package nodeName="android.os" width="-1" height="-1" x="10" y="762" linked="false" referenced="true">
+        <children>
+          <entity nodeName="android.os.Bundle" width="-1" height="-1" x="10" y="10" visibility="1" abstract="false" inner="false" final="true" static="false" type="1" linked="false" referenced="true"/>
+        </children>
+      </package>
+    </children>
+    <leftRuler unit="2" horizontal="false"/>
+    <topRuler unit="2" horizontal="true"/>
+    <wires>
+      <no-comparator/>
+    </wires>
+    <MemberVisibility association="true" depends="true" extends="true" implements="true" note="true" fieldDefault="true" fieldPrivate="true" fieldProtected="true" fieldPublic="true" innerDefault="true" innerPrivate="true" innerProtected="true" innerPublic="true" methodDefault="true" methodPrivate="true" methodProtected="true" methodPublic="true"/>
+    <IncludedPackages>
+      <string>ru.slimeGame</string>
+    </IncludedPackages>
+    <ExcludedReferences>
+      <string>java.</string>
+      <string>javax.</string>
+      <string>com.sun.</string>
+      <string>org.eclipse.</string>
+    </ExcludedReferences>
+  </diagram>
+</object-stream>
