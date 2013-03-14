@@ -40,7 +40,7 @@ public class TheSlimeActivity extends Activity implements OnTouchListener{
 	/**
 	 * @uml.property  name="matchParent"
 	 */
-	final int matchParent = LayoutParams.FILL_PARENT;
+	final int matchParent = LayoutParams.MATCH_PARENT;
 	/**
 	 * @uml.property  name="wrapContent"
 	 */

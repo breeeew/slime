@@ -2,7 +2,12 @@ package ru.SlimeEngine;
 
 import java.util.Timer;
 
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.graphics.Point;
+import android.os.Build;
 import android.view.Display;
+import android.widget.Toast;
 
 public class mSettings {
 	 private static Timer t;
@@ -21,12 +26,25 @@ public class mSettings {
 	    public static int frameCounter=0;
 	    public static int realFrameRate=0;
 	 
-	    public static void GenerateSettings(Display D)
+	    @SuppressLint("NewApi")
+		public static void GenerateSettings(Display D)
 	    {
-	        mSettings.CurrentXRes = D.getWidth();
-	        mSettings.CurrentYRes = D.getHeight();
-	        mSettings.ScaleFactorX = mSettings.CurrentXRes/(float)mSettings.DefaultXRes;
+	    	Point size = new Point();
+	        //
+	    	if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2){
+	            D.getSize(size);
+
+	            mSettings.CurrentXRes = size.x;
+	            mSettings.CurrentYRes = size.y;
+	          }
+	    	else{
+	             
+	            mSettings.CurrentXRes = D.getWidth(); 
+	            mSettings.CurrentYRes = D.getHeight();
+	          	}
+	            mSettings.ScaleFactorX = mSettings.CurrentXRes/(float)mSettings.DefaultXRes;
 	        mSettings.ScaleFactorY = mSettings.CurrentYRes/(float)mSettings.DefaultYRes;
+	        
 	        if (mSettings.ScaleFactorX!=1||mSettings.ScaleFactorY!=1)
 	        {
 	            mSettings.AutoScale=true;
