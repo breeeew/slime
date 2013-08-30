@@ -1,48 +1,60 @@
 package game.sayanara;
 
 import android.app.Activity;
-import com.engine.EngineSettings;
-import com.engine.GameSurface;
+import android.widget.Toast;
+import com.engine.Engine;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.view.View.OnTouchListener;
-import com.engine.primitives.drawables.SimpleSprite;
 
 public class EngineTestActivity extends Activity implements OnTouchListener {
-    public GameSurface gs;
-    SimpleSprite s;
-	public boolean onTouch(View v, MotionEvent event) {
+    public boolean onTouch(View v, MotionEvent event) {
         switch (event.getAction()){
             case MotionEvent.ACTION_DOWN:
-                s.moveToXY(500, 1000);
+                //s.moveToXY(500, 1000);
                 break;
             case MotionEvent.ACTION_UP:
-                s.moveToXY(0, 20);
+                //s.moveToXY(0, 20);
         }
 		return true;
 	}
 
+    private void createGame(){
+        Engine.generateSettings(this, Engine.SET_FULL_SCREEN, 50);
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Window w = this.getWindow();
-        w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        EngineSettings.generateSettings(this.getWindowManager().getDefaultDisplay());
-        EngineSettings.setFrameRate(50);
-        gs = new GameSurface(this);
-        gs.setOnTouchListener(this);
-        this.setContentView(gs);
+        createGame();
+        //setContentView(Engine.gameSurface);
+        Toast.makeText(this, "on create", Toast.LENGTH_LONG).show();
     }
 
 	@Override
-    public void onStart() {
-        super.onStart();
-        s = new SimpleSprite("aa.png", getAssets());
-        s.setXY(10, 10);
-        gs.mainScene.addItem(s);
+    public void onRestart(){
+        super.onRestart();
+        Toast.makeText(this, "on restart", Toast.LENGTH_LONG).show();
 	}
+
+    @Override
+    public void onPause(){
+        super.onPause();
+        Toast.makeText(this, "on pause", Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        //setContentView(Engine.gameSurface);
+        Toast.makeText(this, "on resume", Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void onStart(){
+        super.onStart();
+        Toast.makeText(this, "on start", Toast.LENGTH_LONG).show();
+    }
+
 }

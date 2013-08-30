@@ -1,6 +1,6 @@
 package com.engine.primitives.drawables;
 
-import com.engine.EngineSettings;
+import com.engine.Engine;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -140,8 +140,8 @@ public class AnimatedSprite extends SimpleSprite {
     }
 
     private void AutoSize(){
-        if (EngineSettings.autoScale){
-            this.resize(EngineSettings.scaleFactorX, EngineSettings.scaleFactorY);
+        if (Engine.autoScale){
+            this.resize(Engine.scaleFactorX, Engine.scaleFactorY);
         }
         this.refreshAll();
     }

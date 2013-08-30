@@ -2,7 +2,7 @@ package com.engine.primitives.drawables;
 
 import java.io.IOException;
 
-import com.engine.EngineSettings;
+import com.engine.Engine;
 
 import android.content.res.AssetManager;
 import android.content.res.Resources;
@@ -28,9 +28,9 @@ public class SimpleSprite extends Point implements Movable{
 
     private void AutoSize()
     {
-        if (EngineSettings.autoScale)
+        if (Engine.autoScale)
         {
-            this.resize(EngineSettings.scaleFactorX, EngineSettings.scaleFactorY);
+            this.resize(Engine.scaleFactorX, Engine.scaleFactorY);
         }
         this.refreshAll();
     }

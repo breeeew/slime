@@ -29,10 +29,10 @@ public class GameSurface extends android.view.SurfaceView implements SurfaceHold
 	public void surfaceChanged(SurfaceHolder holder, int format, int width,
 			int height) {
 		mainScene.setWH(width, height);
-        EngineSettings.GenerateSettings(width, height);
+        Engine.generateSettings(width, height);
 	}
 	public void surfaceCreated(SurfaceHolder holder) {
-		 	t.scheduleAtFixedRate(drawer, 0, EngineSettings.frameInterval);
+		 	t.scheduleAtFixedRate(drawer, 0, Engine.frameInterval);
 	        canv = this.getHolder().lockCanvas();
 	        mainScene.setWH(canv.getWidth(), canv.getHeight());
 	        this.getHolder().unlockCanvasAndPost(canv);

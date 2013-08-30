@@ -6,7 +6,7 @@ public class FrameCounterTimerTask extends TimerTask {
 
         @Override
         public void run() {
-        	EngineSettings.realFrameRate = EngineSettings.currentFrameCounter;
-        	EngineSettings.currentFrameCounter = 0;
+        	Engine.realFrameRate = Engine.currentFrameCounter;
+        	Engine.currentFrameCounter = 0;
         }
 }

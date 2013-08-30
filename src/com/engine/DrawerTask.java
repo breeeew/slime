@@ -37,7 +37,7 @@ public class DrawerTask extends TimerTask {
 						}
 					}
 					scene.update();
-					EngineSettings.newFrame();
+					Engine.newFrame();
 	        } 
 	        catch (Exception e) {
 	            // TODO: вывод в лог и пользователю информации об ошибке
